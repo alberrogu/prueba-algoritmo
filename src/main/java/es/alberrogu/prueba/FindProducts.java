@@ -66,7 +66,7 @@ public class FindProducts {
 			Consumer<ProductSizes> setTrueValueToStock;
 			if (Boolean.TRUE.equals(size.getSpecial())) {
 				productSize.setSpecialSizes(Boolean.TRUE);
-				setTrueValueToStock = product -> product.setSpecialSizes(true);
+				setTrueValueToStock = product -> product.setSpecialSizesStock(true);
 			} else {
 				setTrueValueToStock = product -> product.setNormalStock(true);
 
